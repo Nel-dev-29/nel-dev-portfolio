@@ -1,0 +1,189 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-link {
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: rgb(37 99 235);
+}
+
+.theme-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.theme-btn:hover {
+  background: rgb(241 245 249);
+}
+
+.dark .theme-btn:hover {
+  background: rgb(30 41 59);
+}
+
+.primary-btn,
+.secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.primary-btn {
+  background: rgb(37 99 235);
+  color: white;
+}
+
+.primary-btn:hover {
+  background: rgb(29 78 216);
+  transform: translateY(-2px);
+}
+
+.secondary-btn {
+  border: 1px solid rgb(203 213 225);
+  color: rgb(51 65 85);
+}
+
+.secondary-btn:hover {
+  transform: translateY(-2px);
+  border-color: rgb(37 99 235);
+  color: rgb(37 99 235);
+}
+
+.dark .secondary-btn {
+  border-color: rgb(51 65 85);
+  color: rgb(203 213 225);
+}
+
+.dark .secondary-btn:hover {
+  border-color: rgb(96 165 250);
+  color: rgb(147 197 253);
+}
+
+.section-label {
+  color: rgb(37 99 235);
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.section-title {
+  margin-top: 0.5rem;
+  font-size: 2.25rem;
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+.skill-card,
+.project-card {
+  padding: 1.5rem;
+  border: 1px solid rgb(226 232 240);
+  border-radius: 1rem;
+  background: white;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.skill-card:hover,
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+}
+
+.dark .skill-card,
+.dark .project-card {
+  background: rgb(15 23 42);
+  border-color: rgb(51 65 85);
+}
+
+.dark .skill-card:hover,
+.dark .project-card:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.skill-icon {
+  display: inline-flex;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.6rem;
+  background: rgb(239 246 255);
+  color: rgb(37 99 235);
+  font-size: 0.75rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.dark .skill-icon {
+  background: rgb(30 58 138);
+  color: rgb(191 219 254);
+}
+
+.skill-card h3,
+.project-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.skill-card p,
+.project-card p {
+  margin-top: 0.5rem;
+  color: rgb(100 116 139);
+  line-height: 1.6;
+}
+
+.dark .skill-card p,
+.dark .project-card p {
+  color: rgb(148 163 184);
+}
+
+.project-number {
+  color: rgb(148 163 184);
+  font-size: 0.8rem;
+  font-weight: 800;
+  margin-bottom: 1.25rem;
+}
+
+.tag {
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  background: rgb(241 245 249);
+  color: rgb(71 85 105);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.dark .tag {
+  background: rgb(30 41 59);
+  color: rgb(203 213 225);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 640px) {
+  .section-title {
+    font-size: 1.9rem;
+  }
+}
