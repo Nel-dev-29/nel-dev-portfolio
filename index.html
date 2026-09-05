@@ -32,7 +32,7 @@
     class="fixed top-0 left-0 right-0 z-50 border-b border-slate-200/70 dark:border-slate-800/70 bg-white/80 dark:bg-slate-950/80 backdrop-blur-lg">
     <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
       <a href="#home" class="text-xl font-bold tracking-tight">
-     
+
       </a>
 
       <div class="hidden md:flex items-center gap-7 text-sm font-medium">
@@ -88,7 +88,7 @@
         <div class="reveal flex justify-center md:justify-end">
           <div class="relative">
             <div class="absolute -inset-4 rounded-[2rem] bg-blue-600/10 blur-2xl"></div>
-            <img src="profile.jpg" alt="Nel's profile photo"
+            <img src="assets/profile.jpg" alt="Nel's profile photo"
               class="relative w-72 h-80 md:w-80 md:h-96 object-cover object-top rounded-[2rem] shadow-2xl ring-1 ring-slate-200 dark:ring-slate-800" />
           </div>
         </div>
@@ -151,30 +151,24 @@
           <h2 class="section-title">Some things I've worked on.</h2>
         </div>
 
-        <div class="mt-10 max-w-xl">
-          <a href="https://xashlibquiz.com" target="_blank" rel="noopener noreferrer"
-            class="project-card reveal block group" aria-label="Open XashliB Quiz website">
+        <div class="mt-10 grid md:grid-cols-2 gap-6">
+          <a href="https://xashlibquiz.com" target="_blank" rel="noopener noreferrer" class="project-card reveal block group" aria-label="Open XashliB Quiz website">
             <div class="flex items-start justify-between gap-4">
-              <div>
-                <div class="project-number">01</div>
-                <h3 class="group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                  Xavier University Senior High School LibQuiz
-                </h3>
-              </div>
+              <div><div class="project-number">01</div><h3 class="group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">XashliB Quiz</h3></div>
               <span class="text-slate-400 group-hover:text-blue-600 transition-colors text-xl">↗</span>
             </div>
-            <p>
-              An online quiz platform designed for interactive quizzes,
-              participant management and viewing quiz results.
-            </p>
-            <div class="flex flex-wrap gap-2 mt-5">
-              <span class="tag">PHP</span>
-              <span class="tag">MySQL</span>
-              <span class="tag">JavaScript</span>
+            <p>An online quiz platform designed for interactive quizzes, participant management and viewing quiz results.</p>
+            <div class="flex flex-wrap gap-2 mt-5"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">JavaScript</span></div>
+            <p class="mt-5 text-sm font-semibold text-blue-600 dark:text-blue-400">Visit xashlibquiz.com →</p>
+          </a>
+          <a href="https://capstone-documents.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-card reveal block group" aria-label="Open Appointment and Patient Record Management System">
+            <div class="flex items-start justify-between gap-4">
+              <div><div class="project-number">02</div><h3 class="group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Appointment &amp; Patient Record Management System with Patient Portal</h3></div>
+              <span class="text-slate-400 group-hover:text-blue-600 transition-colors text-xl">↗</span>
             </div>
-            <p class="mt-5 text-sm font-semibold text-blue-600 dark:text-blue-400">
-              Visit xashlibquiz.com →
-            </p>
+            <p>A web-based appointment and patient record management system with a dedicated patient portal.</p>
+            <div class="flex flex-wrap gap-2 mt-5"><span class="tag">Web System</span><span class="tag">Patient Portal</span><span class="tag">Management System</span></div>
+            <p class="mt-5 text-sm font-semibold text-blue-600 dark:text-blue-400">Visit Project →</p>
           </a>
         </div>
       </div>
@@ -191,14 +185,10 @@
 
         <div class="mt-8 flex flex-wrap justify-center gap-4">
           <!-- Replace these with your actual links -->
-          <a
-  href="https://mail.google.com/mail/?view=cm&fs=1&to=junelmicabalo19@gmail.com"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="primary-btn"
->
-  Email Me
-</a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=junelmicabalo19@gmail.com" target="_blank"
+            rel="noopener noreferrer" class="primary-btn">
+            Email Me
+          </a>
           <a href="https://www.facebook.com/nelmic2002" class="secondary-btn">Facebook</a>
           <a href="#" class="secondary-btn">GitHub</a>
         </div>
@@ -208,7 +198,7 @@
 
   <footer class="border-t border-slate-200 dark:border-slate-800 py-8">
     <div class="max-w-6xl mx-auto px-6 text-center text-sm text-slate-500">
-      © <span id="year"></span> Nel-dev. All rights reserved.
+      © <span id="year"></span> Nel. All rights reserved.
     </div>
   </footer>
 
