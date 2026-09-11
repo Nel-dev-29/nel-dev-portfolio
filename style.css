@@ -187,3 +187,157 @@ body {
     font-size: 1.9rem;
   }
 }
+/* ── SKILL ICON (SVG version) ── */
+.skill-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  padding: 8px;
+  background: rgb(239 246 255);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.dark .skill-icon-wrap {
+  background: rgb(30 41 59);
+}
+
+.skill-svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Tailwind — teal tinted bg */
+.skill-icon-bg-teal {
+  background: rgb(236 254 255);
+}
+.dark .skill-icon-bg-teal {
+  background: rgb(8 51 68);
+}
+/* Tailwind SVG has black stroke — invert in dark */
+.skill-svg-teal {
+  filter: none;
+}
+.dark .skill-svg-teal {
+  filter: invert(1) brightness(1.8) sepia(1) hue-rotate(155deg) saturate(3);
+}
+
+/* JavaScript — yellow bg */
+.skill-icon-bg-yellow {
+  background: rgb(254 252 232);
+}
+.dark .skill-icon-bg-yellow {
+  background: rgb(66 32 6);
+}
+
+/* React — dark bg (svg has dark bg built in) */
+.skill-icon-bg-react {
+  background: #222;
+}
+.dark .skill-icon-bg-react {
+  background: #111;
+}
+
+/* PHP — purple-ish bg, dark svg needs white fill */
+.skill-icon-bg-php {
+  background: rgb(237 233 254);
+}
+.dark .skill-icon-bg-php {
+  background: rgb(46 16 101);
+}
+.skill-svg-php {
+  filter: invert(25%) sepia(60%) saturate(500%) hue-rotate(250deg);
+}
+.dark .skill-svg-php {
+  filter: brightness(0) invert(1);
+}
+
+/* Figma — white/light bg */
+.skill-icon-bg-white {
+  background: rgb(248 250 252);
+  border: 1px solid rgb(226 232 240);
+}
+.dark .skill-icon-bg-white {
+  background: rgb(15 23 42);
+  border-color: rgb(51 65 85);
+}
+
+/* ── CONTACT BUTTONS ── */
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 1.3rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  font-size: 0.925rem;
+  border: 1px solid rgb(203 213 225);
+  color: rgb(51 65 85);
+  background: white;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  border-color: rgb(37 99 235);
+  color: rgb(37 99 235);
+}
+
+.dark .contact-btn {
+  background: rgb(15 23 42);
+  border-color: rgb(51 65 85);
+  color: rgb(203 213 225);
+}
+
+.dark .contact-btn:hover {
+  border-color: rgb(96 165 250);
+  color: rgb(147 197 253);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+.contact-btn-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.contact-btn-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Facebook icon — has black fill, needs color */
+.contact-btn-icon-fb {
+  background: #1877F2;
+  padding: 4px;
+}
+.contact-btn-icon-fb img {
+  filter: brightness(0) invert(1);
+}
+
+/* GitHub icon — has black fill */
+.contact-btn-icon-gh {
+  background: #24292e;
+  padding: 3px;
+}
+.contact-btn-icon-gh img {
+  filter: brightness(0) invert(1);
+}
+
+/* Gmail SVG already colored, no bg needed */
+.contact-btn-icon:not(.contact-btn-icon-fb):not(.contact-btn-icon-gh) {
+  background: transparent;
+}
